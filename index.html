@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MASTR — kişisel web sitesi ve dijital portföy.">
+  <meta name="theme-color" content="#070b14">
+  <title>MASTR | Kişisel Portföy</title>
+  <style>
+    :root{--bg:#070b14;--panel:#0d1524;--cyan:#20d9ff;--blue:#397bff;--text:#edf7ff;--muted:#91a6bd}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at 75% 5%,#102c4b 0,transparent 34%),var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,90%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:#070b14df;backdrop-filter:blur(14px);border-bottom:1px solid #1b2d43}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:1.65rem;font-weight:900;letter-spacing:4px;color:white}.logo span{color:var(--cyan);text-shadow:0 0 18px #20d9ff}
+    .links{display:flex;gap:26px;color:#b6c9dc;font-size:.93rem}.links a:hover{color:var(--cyan)}
+    .hero{min-height:78vh;display:grid;align-items:center;padding:80px 0 65px;position:relative}
+    .eyebrow{color:var(--cyan);font-size:.8rem;letter-spacing:4px;font-weight:800}
+    h1{font-size:clamp(3.6rem,10vw,7.5rem);line-height:.98;letter-spacing:-5px;margin:20px 0}
+    h1 span{color:var(--cyan);text-shadow:0 0 32px #20d9ff55}
+    .lead{max-width:600px;color:var(--muted);font-size:1.12rem}
+    .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+    .btn{padding:12px 21px;border:1px solid var(--cyan);border-radius:7px;font-weight:750;transition:.2s}
+    .primary{background:linear-gradient(100deg,var(--blue),#08bddd);color:#03101b;border:0;box-shadow:0 0 28px #20d9ff30}
+    .btn:hover{transform:translateY(-3px);box-shadow:0 0 25px #20d9ff55}
+    section{padding:76px 0;border-top:1px solid #142338}
+    .section-tag{color:var(--cyan);letter-spacing:3px;font-size:.75rem;font-weight:800}
+    h2{font-size:2.2rem;margin:8px 0 22px}
+    .about{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
+    .about p{color:var(--muted);max-width:650px}
+    .card{background:linear-gradient(145deg,#101e31,#0b1220);border:1px solid #1b3853;border-radius:14px;padding:26px;box-shadow:0 15px 50px #0003}
+    .glow{height:210px;border-radius:12px;background:radial-gradient(circle at 50% 50%,#20d9ff30,transparent 55%),linear-gradient(135deg,#102c48,#0a1220);display:grid;place-items:center}
+    .glow strong{font-size:3rem;letter-spacing:8px;color:var(--cyan);text-shadow:0 0 30px #20d9ff}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .tile{background:var(--panel);border:1px solid #1a3048;border-radius:12px;padding:22px}
+    .tile .num{font-size:1.4rem;color:var(--cyan);font-weight:900}
+    .tile p{color:var(--muted);font-size:.94rem}
+    .contact{display:flex;justify-content:space-between;align-items:center;gap:25px;flex-wrap:wrap}
+    footer{padding:28px 0;color:#71869e;font-size:.85rem;border-top:1px solid #142338}
+    @media(max-width:700px){.links{gap:12px;font-size:.78rem}.about{grid-template-columns:1fr}.grid{grid-template-columns:1fr}h1{letter-spacing:-2px}.hero{min-height:70vh}}
+  </style>
+</head>
+<body>
+<header><nav class="wrap">
+  <a class="logo" href="#home">MA<span>STR</span></a>
+  <div class="links"><a href="#about">Hakkımda</a><a href="#interests">İlgi Alanları</a><a href="#contact">İletişim</a></div>
+</nav></header>
+<main>
+  <section class="hero wrap" id="home">
+    <div>
+      <div class="eyebrow">KİŞİSEL DÜNYAMA HOŞ GELDİN</div>
+      <h1>Ben <span>MASTR.</span></h1>
+      <p class="lead">Fikirlerimi, ilgi alanlarımı ve projelerimi paylaştığım kişisel web sitem. Yeni şeyler öğreniyor, üretiyor ve her gün kendimi geliştiriyorum.</p>
+      <div class="actions"><a class="btn primary" href="#about">Beni tanı</a><a class="btn" href="#contact">İletişime geç</a></div>
+    </div>
+  </section>
+  <section id="about"><div class="wrap about">
+    <div><div class="section-tag">01 / HAKKIMDA</div><h2>Kısaca ben</h2>
+      <p>Merhaba! Ben MASTR. Burası kendimi tanıttığım, yaptığım çalışmaları sergilediğim ve dijital dünyadaki yolculuğumu paylaştığım alan.</p>
+      <p>Bu metni kendi hikâyen, hedeflerin ve seni anlatan bilgilerle değiştirebilirsin.</p>
+    </div>
+    <div class="card"><div class="glow"><strong>MASTR</strong></div></div>
+  </div></section>
+  <section id="interests"><div class="wrap">
+    <div class="section-tag">02 / NELER YAPIYORUM?</div><h2>İlgi alanlarım</h2>
+    <div class="grid">
+      <article class="tile"><div class="num">01</div><h3>Teknoloji</h3><p>Yeni teknolojileri keşfetmek ve dijital beceriler geliştirmek.</p></article>
+      <article class="tile"><div class="num">02</div><h3>Üretim</h3><p>Yeni fikirler geliştirmek ve yaratıcı projeler üzerinde çalışmak.</p></article>
+      <article class="tile"><div class="num">03</div><h3>Öğrenme</h3><p>Merak ettiğim konularda araştırmak, öğrenmek ve ilerlemek.</p></article>
+    </div>
+  </div></section>
+  <section id="contact"><div class="wrap contact">
+    <div><div class="section-tag">03 / İLETİŞİM</div><h2>Bir fikrin mi var?</h2><p class="lead">Benimle iletişime geçmek için aşağıdaki e-posta bağlantısını kullanabilirsin.</p></div>
+    <a class="btn primary" href="mailto:eposta@ornek.com">E-posta gönder</a>
+  </div></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> MASTR. Tüm hakları saklıdır.</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
